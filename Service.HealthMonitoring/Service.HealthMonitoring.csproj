@@ -7,7 +7,7 @@
     <ProjectGuid>{2814D8AF-BDFB-4BF3-B3B7-BCD435BC10C4}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Service.HealthMonitoring</RootNamespace>
+    <RootNamespace>MeetEric</RootNamespace>
     <AssemblyName>Service.HealthMonitoring</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -74,10 +74,12 @@
     <Reference Include="System.Runtime.Serialization" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Examiners\HardDriveExaminer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="HealthMonitoring.cs" />
     <Compile Include="Program.cs" />
-    <Compile Include="ServiceEventSource.cs" />
+    <Compile Include="Watchdogs\HardDriveWatchdog.cs" />
+    <Compile Include="Workers\MachineHealthWorker.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="PackageRoot\Config\Settings.xml" />
