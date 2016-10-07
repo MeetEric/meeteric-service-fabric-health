@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Service.HealthMonitoring</RootNamespace>
     <AssemblyName>Service.HealthMonitoring</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
     <DebugSymbols>true</DebugSymbols>
@@ -83,6 +84,16 @@
     <None Include="PackageRoot\ServiceManifest.xml" />
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Contracts\MeetEric.Contracts\MeetEric.Contracts.csproj">
+      <Project>{64b7729d-5779-4ffa-a7ad-21834b70fdbe}</Project>
+      <Name>MeetEric.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceFabric\MeetEric.ServiceFabric\MeetEric.ServiceFabric.csproj">
+      <Project>{a8595f77-58bd-46c3-a5d5-2d2e6b7c89e0}</Project>
+      <Name>MeetEric.ServiceFabric</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
