@@ -1,0 +1,6 @@
+[submodule "ServiceFabric"]
+	path = ServiceFabric
+	url = https://github.com/MeetEric/meeteric-service-fabric
+[submodule "Contracts"]
+	path = Contracts
+	url = https://github.com/MeetEric/meeteric-contracts.git
