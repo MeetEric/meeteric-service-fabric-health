@@ -4,3 +4,6 @@
 [submodule "Contracts"]
 	path = Contracts
 	url = https://github.com/MeetEric/meeteric-contracts.git
+[submodule "Core"]
+	path = Core
+	url = https://github.com/MeetEric/meeteric-core.git
