@@ -15,6 +15,9 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <PropertyGroup>
+      <OutputPath>bin\$(Platform)\$(Configuration)</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <None Include="ApplicationPackageRoot\ApplicationManifest.xml" />
     <None Include="ApplicationParameters\Cloud.xml" />
